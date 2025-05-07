@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #00b3d4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    padding: 20px;
+    border-radius: 50px; /* Bordes redondeados para el contenedor */
+    overflow: hidden; /* Para asegurar que el contenido no sobresalga de los bordes redondeados */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: normal;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.header-logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.profile {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.profile-name {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+    gap: 30px;
+}
+
+.profile-left {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 25px; /* Bordes redondeados para las imágenes */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px; /* Bordes redondeados para las imágenes */
+}
+
+.profile-quote {
+    color: #00b3d4;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 300px;
+}
+
+.profile-right {
+    flex: 1;
+}
+
+.profile-field {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.profile-field h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.profile-field p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Estilos para la sección de análisis */
+.analysis {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.analysis h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.characteristics {
+    list-style-type: none;
+    margin: 30px 0;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.characteristics li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.check {
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+/* Estilos específicos para los diferentes tamaños del logo DIAN */
+.inline-logo {
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.strategy-logo {
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.conclusion {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conclusion p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.conclusion h3 {
+    font-size: 24px;
+    margin: 30px 0 15px;
+}
+
+.strategy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.strategy p {
+    margin: 0;
+    text-align: left;
+}
+
+.capabilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.capability {
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.capability p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-right {
+        width: 100%;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+    
+    .capability {
+        width: 100%;
+    }
+    
+    .strategy {
+        flex-direction: column;
+    }
+    
+    .container {
+        border-radius: 30px; /* Radio más pequeño para dispositivos móviles */
+    }
+    
+    .profile-image, .profile-image img {
+        border-radius: 15px; /* Radio más pequeño para dispositivos móviles */
+    }
+}
